@@ -1,0 +1,139 @@
+.containerWelcomePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background: linear-gradient(135deg, #1b1b1b, #2c3e50);
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  color: #ecf0f1;
+}
+
+.welcomeText {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  animation: initAnimation 0.7s ease-in-out;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.welcomeText,
+.notionText {
+  font-size: 52px;
+  font-weight: 800;
+}
+
+.notionText {
+  color: #00aaff;
+  opacity: 0;
+  animation: fadeIn 0.7s forwards;
+  transition: opacity 0.5s ease;
+}
+
+.textPriority {
+  color: #bdc3c7;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  animation: glowing 1s infinite;
+  margin-top: 10px;
+}
+
+.buttonsSelect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.loginButton,
+.registrationButton {
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 18px;
+  padding: 12px;
+  text-align: center;
+  transition: all 0.7s;
+  cursor: pointer;
+}
+
+.loginButton:hover,
+.registrationButton:hover {
+  box-shadow: none;
+}
+
+.loginButton:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.registrationButton:hover {
+  border: 1px solid #b424e4;
+  background: #4c4c4c;
+  color: #ffffff;
+}
+
+.loginButton {
+  color: #fff;
+  background: #4c4c4c;
+  border: 1px solid #00aaff;
+  box-shadow: 0 0 5px 1px #00aaff;
+}
+
+.registrationButton {
+  border: 1px solid #00aaff;
+  box-shadow: 0 0 5px 1px #b424e4;
+}
+
+@keyframes initAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowing {
+  from,
+  to {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 600px) {
+  .welcomeText {
+    font-size: 48px;
+  }
+
+  .loginButton,
+  .registrationButton {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "users": [
+    {
+      "id": "011e",
+      "email": "teste4@exemplo.us",
+      "password": "9d8751610b0ceb7b1e37a3b4c3218b4c4d5783c4f29740616eec06685ed76473"
+    },
+    {
+      "id": "fe74",
+      "email": "eee@gmail.com",
+      "password": "d7e86583139728d5657973ef36d2d002cc5caa5173614578a7ebaaefc471b650"
+    },
+    {
+      "id": "akc8ymoqnlj",
+      "email": "1235@email.com",
+      "password": "5cf93e609f966d2faeb72741e2e1d31a65a6cb8b707b887d41d6b81101a67bde",
+      "createdAt": "2024-12-07T14:19:12.051Z"
+    },
+    {
+      "id": "a6qukycki7",
+      "email": "Lolkek123@gmail.com",
+      "password": "9499343a60d974a8d7ea46a8ae9d7f271128fdc4ca169b1836a8dfe3501bf7aa",
+      "createdAt": "2024-12-07T15:59:29.777Z"
+    }
+  ],
+  "notes": [
+    {
+      "id": "btvdmyc2b6q",
+      "title": "123",
+      "body": "123",
+      "createdAt": "2024-12-07T15:28:02.949Z",
+      "userId": "akc8ymoqnlj"
+    },
+    {
+      "id": "1yz7zyugvvvh",
+      "title": "1234",
+      "body": "привет мир",
+      "createdAt": "2024-12-07T15:28:06.240Z",
+      "userId": "akc8ymoqnlj"
+    },
+    {
+      "id": "h185ece42pb",
+      "title": "my note",
+      "body": "hi",
+      "createdAt": "2024-12-07T15:59:56.278Z",
+      "userId": "a6qukycki7"
+    }
+  ]
+}
